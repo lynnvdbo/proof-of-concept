@@ -31,3 +31,15 @@ app.engine('liquid', engine.express())
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone/1'
+
+// GET route voor de index
+app.get('/', async function (request, response) {
+   // Render index.liquid uit de Views map
+   // Geef hier eventueel data aan mee
+    const res = await fetch(baseURL);
+    const result = await res.json();
+
+    response.render('index.liquid', {
+    });
+})
