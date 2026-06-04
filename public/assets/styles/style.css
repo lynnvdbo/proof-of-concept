@@ -39,6 +39,13 @@ header {
 }
 
 
+
+/* MARK: partial terug-pijltje */
+.pijltje-terug {
+    margin: 1rem;
+}
+
+
 /* MARK: homepage */
 main.home {
 
