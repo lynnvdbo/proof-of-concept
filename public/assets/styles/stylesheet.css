@@ -1,0 +1,47 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM sans', sans-serif; 
+}
+
+@font-face {
+    font-family: DM sans;
+    src: url('../fonts/DMSans_18pt-Regular.ttf');
+    font-weight: 400 ; /* regular */
+}
+
+@font-face {
+    font-family: DM sans;
+    src: url('../fonts/DMSans_18pt-Medium.ttf');
+    font-weight: 500 ; /* medium */
+}
+
+@font-face {
+    font-family: DM sans;
+    src: url('../fonts/DMSans_18pt-Bold.ttf');
+    font-weight: 700 ; /* bold */
+}
+
+@font-face {
+    font-family: DM sans;
+    src: url('../fonts/DMSans_18pt-Black.ttf');
+    font-weight: 900 ; /* black */
+}
+
+:root {
+    /* colors */
+    --primary-color: #472D7C;
+    --secondary-color: #F6E34D;
+    --dark-accent: #000000;
+    --light-accent: #FFFFFF;
+
+    /* borders */
+    --border-radius: 0.5rem;
+
+    /* font weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 700;
+}
