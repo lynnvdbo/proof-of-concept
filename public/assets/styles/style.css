@@ -39,6 +39,25 @@ header {
 }
 
 
+/* MARK: partial foot.liquid */
+.footer-ctc {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+
+    .svg {
+        padding: 2rem;
+    }
+
+    p {
+        color: var(--light-accent);
+    }
+
+    .logo-ctc {
+        width: 30%;
+        height: 100%;
+    }
+}
+
 
 /* MARK: partial terug-pijltje */
 .pijltje-terug {
