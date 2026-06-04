@@ -38,3 +38,13 @@ header {
     }
 }
 
+
+/* MARK: homepage */
+main.home {
+
+    h1 {
+        text-align: center;
+        margin-block: 1rem;
+    }
+}
+
