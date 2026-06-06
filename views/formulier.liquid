@@ -16,65 +16,48 @@
     </svg>
 
     <form class="formulier-quickscan">
-        <label class="label-ctc">
-            Adres:
-            <input type="text">
-        </label>
 
-        <label class="label-ctc">
-            Foto:
-            <input type="file" class="foto">
-        </label>
+        <label for="adres" class="label-ctc">Adres:</label>
+        <input type="text" id="adres" class="input-design">
 
-        <label class="label-ctc">
-            Coördinaat:
-            <textarea name="comment" maxlength="100"></textarea>
-        </label>
+        <label for="foto" class="label-ctc">Foto:</label>
+        <input type="file" id="foto" class="input-design-file">
 
-        <label class="label-ctc">
-            Status:
-            <select>
-                <option value="vrij">Vrij</option>
-                <option value="bezet">Bezet</option>
-                <option value="overtreding">Overtreding</option>
-                <option value="bestaat niet">Bestaat niet</option>
-            </select>
-        </label>
+        <label for="coordinaat" class="label-ctc">Coördinaat:</label>
+        <textarea name="comment" id="coordinaat" maxlength="100" class="input-design"></textarea>
 
-        <label class="label-ctc">
-            Verkeersbord:
-            <input type="text">
-        </label>
-        
-        <label class="label-ctc">
-            Observaties:
-            <textarea name="comment" maxlength="100"></textarea>
-        </label>
+        <label for="status" class="label-ctc">Status:</label>
+        <select class="input-design">
+            <option value="vrij">Vrij</option>
+            <option value="bezet">Bezet</option>
+            <option value="overtreding">Overtreding</option>
+            <option value="bestaat niet">Bestaat niet</option>
+        </select>
 
-        <label class="label-ctc">
-            Geschiktheid monitoring:
-            <select>
-                <option value="neutraal">Neutraal</option>
-                <option value="geschik">Geschikt</option>
-                <option value="zeer geschikt">Zeer geschikt</option>
-                <option value="ongeschikt">Ongeschikt</option>
-            </select>
-        </label>
+        <label for="verkeersbord" class="label-ctc">Verkeersbord:</label>
+        <input type="text" id="verkeersbord" class="input-design">
 
-        <label class="label-ctc">
-            Geschiktheid smart zone:
-            <select>
-                <option value="neutraal">Neutraal</option>
-                <option value="geschikt">Geschikt</option>
-                <option value="zeer geschikt">Zeer geschikt</option>
-                <option value="ongeschikt">Ongeschikt</option>
-            </select>
-        </label>
+        <label for="observaties" class="label-ctc">Observaties:</label>
+        <textarea name="comment" id="observaties" maxlength="100" class="input-design"></textarea>
 
-        <label class="label-ctc">
-            Lengte(cm):
-            <input type="text">
-        </label>
+        <label for="geschiktheid monitoring" class="label-ctc">Geschiktheid monitoring:</label>
+        <select class="input-design">
+            <option value="neutraal">Neutraal</option>
+            <option value="geschik">Geschikt</option>
+            <option value="zeer geschikt">Zeer geschikt</option>
+            <option value="ongeschikt">Ongeschikt</option>
+        </select>
+
+        <label for="geschiktheid smart zone" class="label-ctc">Geschiktheid smart zone:</label>
+        <select class="input-design">
+            <option value="neutraal">Neutraal</option>
+            <option value="geschik">Geschikt</option>
+            <option value="zeer geschikt">Zeer geschikt</option>
+            <option value="ongeschikt">Ongeschikt</option>
+        </select>
+
+        <label for="lengte" class="label-ctc">Lengte(cm):</label>
+        <input type="text" id="lengte" class="input-design">
 
         <input type="submit" value="Verzenden" class="verzend-knop">
     </form>

@@ -99,20 +99,19 @@ main.formulier {
         background-color: var(--primary-color);
         margin: 0.5rem;
         padding: 1.5rem 0.8rem 1.5rem 0.8rem;
-        gap: 1.5rem;
+        gap: 0.5rem;
         
          .label-ctc {
             display: flex;
             flex-direction: column;
 
             /* hij pakt alle direct kinderen, (miet voor alles gebruiken nu handig in dit geval handig tipje van marcin)*/
-            >* { 
+            /* >* { 
                 margin-top: 0.3rem;
                 background-color: #F2F3F7;
                 border-radius: var(--border-radius);
                 padding: 0.3rem;
-                /* border: none; */
-            }
+            } */
 
             .foto {
                 background-color: var(--primary-color);
@@ -123,8 +122,19 @@ main.formulier {
             }
         }
 
+        .input-design { 
+            background-color: #F2F3F7;
+            border-radius: var(--border-radius);
+            padding: 0.3rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .input-design-file {
+                margin-bottom: 1.3rem;
+            }
+
         .verzend-knop {
-            width: 50%;
+            width: 35%;
             height: 35px;
             background-color: transparent;
             border-color: var(--secondary-color);
