@@ -31,6 +31,9 @@ app.engine('liquid', engine.express())
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+// Hierdoor hoef je bij response.render() alleen de naam van de view op te geven
+app.set('view engine', 'liquid')
+
 const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone/1'
 
 // GET route voor de index
@@ -40,13 +43,13 @@ app.get('/', async function (request, response) {
     const res = await fetch(baseURL);
     const result = await res.json();
 
-    response.render('index.liquid', {
+    response.render('index', {
     });
 })
 
 // GET route naar formulier/quickscan
 app.get('/formulier.liquid', async function (request, response) {
-    response.render('formulier.liquid', {
+    response.render('formulier', {
     });
 })
 
