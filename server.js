@@ -48,7 +48,7 @@ app.get('/', async function (request, response) {
 })
 
 // GET route naar formulier/quickscan
-app.get('/formulier.liquid', async function (request, response) {
+app.get('/quickscan', async function (request, response) {
     response.render('formulier', {
     });
 })
