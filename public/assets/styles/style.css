@@ -97,8 +97,8 @@ main.formulier {
         color: var(--light-accent);
         flex-direction: column;
         background-color: var(--primary-color);
-        margin: 1.5rem;
-        padding: 1.5rem 2rem 1.5rem 2rem;
+        margin: 0.5rem;
+        padding: 1.5rem 0.8rem 1.5rem 0.8rem;
         gap: 1.5rem;
         
          .label-ctc {
