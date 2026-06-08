@@ -77,6 +77,17 @@ header {
     margin: 1rem;
 }
 
+/* MARK: partial sub-logo */
+.sub-logo {
+    height: 40rem;
+    width: 40rem;
+    overflow: hidden;
+    opacity: 5%;
+    position: fixed;
+    top: -10rem; 
+    z-index: -100; 
+}
+
 
 /* MARK: partial 123-nav */
     .alle-paginas {
@@ -141,18 +152,6 @@ main.home {
                 text-underline-offset: 4px;  
             }
         }
-    }
-
-    .sub-logo-home {
-        height: 55rem;
-        width: 40rem;
-        overflow: hidden;
-        opacity: 5%;
-        position: fixed;
-        top: 18rem;   
-        right: -5rem;
-        transform: rotate(20deg);
-        z-index: -100; 
     }
 
     .locatie-grid {
