@@ -34,16 +34,20 @@ app.set('views', './views')
 // Hierdoor hoef je bij response.render() alleen de naam van de view op te geven
 app.set('view engine', 'liquid')
 
-const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone/1'
+const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone'
 
 // GET route voor de index
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
-    const res = await fetch(baseURL);
-    const result = await res.json();
+    // const res = await fetch(baseURL);
+    // const result = await res.json();
+    const apiResponse = await fetch(baseURL)
+    const apiResponseJSON = await apiResponse.json()
+    console.log(apiResponseJSON.data)
 
     response.render('index', {
+      cities: apiResponseJSON.data
     });
 })
 
