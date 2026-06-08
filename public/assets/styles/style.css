@@ -65,6 +65,40 @@ header {
 }
 
 
+/* MARK: partial 123-nav */
+    .alle-paginas {
+        justify-content: center;
+        font-size: 0.9rem;
+        margin: 0rem 2rem 2rem 2rem;
+    }
+
+    .nummers {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+        color:var(--black-color);
+        list-style-type: none;
+    }
+
+    .nummers a {
+        text-decoration: none;
+        color:var(--black-color);
+    }
+
+    .nummers a:hover {
+        font-weight: 600;
+        color: var(--accent-color);
+    }
+
+    .nummers .pagina-1 {
+        color: var(--accent-color);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px; 
+    }
+
+
 /* MARK: homepage */
 main.home {
 
