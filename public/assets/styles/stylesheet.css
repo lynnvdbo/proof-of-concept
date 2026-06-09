@@ -26,22 +26,25 @@
 @font-face {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Black.ttf');
-    font-weight: 900 ; /* black */
+    font-weight: 800 ; /* black */
 }
 
 :root {
     /* colors */
-    --primary-color: #472D7C;
+    --primary-color: #585A9D;
     --secondary-color: #F6E34D;
     --dark-accent: #000000;
     --light-accent: #FFFFFF;
 
     /* borders */
-    --border-radius: 0.5rem;
+    --border-radius: 0.3rem;
 
+    /* schaduw */
+    --shadow: inset 0 1px 2px oklch(100% 0 0 / 12.82%), 0 2px 4px oklch(0 0 0 / 10.82%), 0 4px 8px oklch(0 0 0 / 8.24%);
+    
     /* font weights */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --font-weight-black: 700;
+    --font-weight-black: 800;
 }
