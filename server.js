@@ -67,3 +67,12 @@ app.get('/stad', async function (request, response) {
     });
 })
 
+// GET route naar quickscan-detailpagina
+app.get('/quickscan-detailpagina', async function (request, response) {
+    const apiResponse = await fetch(baseURL)
+    const apiResponseJSON = await apiResponse.json()
+    
+    response.render('quickscan-detailpagina', {
+      cities: apiResponseJSON.data
+    });
+})
