@@ -25,7 +25,9 @@ header {
         align-items: center;
         padding-inline: 0.7rem;
         color: var(--dark-accent);
-
+        font-weight:var(--font-weight-bold);
+        box-shadow: var(--shadow);
+      
         &:hover {
             text-decoration: underline;
         }
@@ -111,7 +113,7 @@ header {
     }
 
     .nummers a:hover {
-        font-weight: 600;
+        font-weight: var(--font-weight-medium);
         color: var(--accent-color);
     }
 
@@ -130,6 +132,11 @@ main.home {
         margin: 1.5rem 1.5rem 0.5rem 1.5rem;
     }
 
+    img {
+        box-shadow: var(--shadow);
+        border-radius: var(--border-radius);
+    }
+
     .steden-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -140,6 +147,7 @@ main.home {
         h2 {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
+            font-weight: var(--font-weight-medium);
         }
 
         a {
@@ -170,6 +178,11 @@ main.stad {
         font-size: 1.9rem;
     }
 
+    img {
+        box-shadow: var(--shadow);
+        border-radius: var(--border-radius);
+    }
+
     .locatie {
         display: flex;
         align-items: center;
@@ -178,7 +191,7 @@ main.stad {
 
     p {
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: var(--font-weight-medium);
     }
 
     .header-stad {
