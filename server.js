@@ -90,4 +90,40 @@ app.get('/quickscan-detailpagina/:id', async function (request, response) {
 })
 
 
+// POST route van formulier/quickscan
+app.post('/quickscan-detailpagina', async (request, response) => { 
+  
+    console.log(request.body)
+    const postResponse = await fetch(
+      'https://fdnd-agency.directus.app/items/ctc_smartzone', // API n point van quickscan formulier (hier kan je een GET en POST doen)
+      {
+        // dit is JSON object met de benodigde data om wat op te slaan
+        method: 'POST', // methode post meegeven zodat de server weet dat er data opgeslagen moet worden
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        
+        body: JSON.stringify({
+          // al deze dingen staan in het formulier
+          city: request.body.city,
+          time: request.body.time,
+          address: request.body.address,
+          long: request.body.long,
+          lat: request.body.lat,
+          status: request.body.status,
+          monitoring_suitability: request.body.monitoring_suitability,
+          smartzone_suitability: request.body.smartzone_suitability,
+          traffic_sign: request.body.traffic_sign,
+          comment: request.body.comment,
+          length: request.body.length,
+          // picture: pictureId,
+          picture: null,
+        })
+      }
+    )
+
+    const postJSON = await postResponse.json()
+
+    // response.redirect(`/nieuws/${request.params.slug}`) // als de post gelukt is eeen redirect naar de get route VAN HET NIEUWA ARTIKEL
+    response.redirect(`/quickscan-detailpagina/${postJSON.data.id}`)
 })
