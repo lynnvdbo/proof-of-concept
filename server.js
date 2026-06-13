@@ -36,18 +36,24 @@ app.set('view engine', 'liquid')
 
 const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone'
 
-// GET route voor de index
+// // GET route voor de index/home
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
     // const res = await fetch(baseURL);
     // const result = await res.json();
     const apiResponse = await fetch(baseURL)
+    const apiResponse = await fetch(`${baseURL}?sort=city`)
     const apiResponseJSON = await apiResponse.json()
-    console.log(apiResponseJSON.data)
 
+    // zorgt ervoor dat je op de home niet dubbele steden krijgt
+    const uniqueCities = apiResponseJSON.data.filter((huidigeStad, huidigePositie, alleSteden) =>
+    // Zoek de eerste plek waar deze stadsnaam voorkomt in de lijst
+    // is de huidige plek gelijk aan de eerste plek? Dan is het de eerste keer dat we deze stad ziend dus bewaren
+    // is de huidige plek anders, dan hebben we deze stad al eerder gezien dus weggooien
+    huidigePositie === alleSteden.findIndex(c => c.city === huidigeStad.city)
+    )
     response.render('index', {
-      cities: apiResponseJSON.data
     });
 })
 
