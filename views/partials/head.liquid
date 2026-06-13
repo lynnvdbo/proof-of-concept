@@ -13,9 +13,11 @@
 <header>
     <div class="header-ctc">
         <a href="/">
-            <img src="/assets/images/logoCTC-wit.png" class="logo-ctc" alt="logo of coding the curbs">  
+            <img src="/assets/images/logoCTC-wit.png" class="logo-ctc" alt="logo of coding the curbs"> 
         </a>
 
-        <a href="/quickscan">Nieuwe Quickscan</a>
+        {% unless hide-quickscan-button %}
+        <a href="/quickscan" class="button-formulier">Nieuwe Quickscan</a>
+        {% endunless %} 
     </div>
 </header>

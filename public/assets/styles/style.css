@@ -14,6 +14,7 @@ header {
     background-color: var(--primary-color);
     align-items: center;
     white-space: nowrap;
+    min-height: 80px;
 
     a:nth-of-type(2) {
         text-decoration: none;
@@ -36,7 +37,7 @@ header {
     }
 
     .logo-ctc {
-        width: 70%;
+        width: 150px;
         height: 100%;
     }
 }
