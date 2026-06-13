@@ -237,6 +237,108 @@ main.stad {
 }
 
 
+/* MARK: quickscan detailpagina */
+.quickscan-detailpagina {
+    margin: 0rem 1rem 1rem 1rem;
+
+    .pijltje-terugg {
+        padding: 0rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        background-color: var(--primary-color);
+        color: var(--light-accent);
+        font-weight: var(--font-weight-medium);
+        border-radius: 0px 0px 15px 15px;
+        padding: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        background-color: var(--primary-color);
+        color: var(--light-accent);
+        font-weight: var(--font-weight-regular);
+        padding: 0.75rem;
+        border-radius: 15px 15px 0 0;
+    }
+
+    span {
+        font-weight: var(--font-weight-bold);
+    }
+
+    .locatie-tijd {
+        background-color: #E0E1F0;
+        margin-block: 1rem;
+        border-radius: 15px;
+        border-bottom: solid;
+
+        .info1 {
+            padding: 1rem 1rem 0.5rem 1rem;
+        } 
+
+        .info2 {
+            padding: 0rem 1rem 0rem 1rem;
+        }
+
+        .info3 {
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+
+        .info4 {
+            padding: 0rem 1rem 1rem 1rem;
+        }
+    } 
+
+    .geschiktheid {
+        background-color: #E0E1F0;
+        margin-block: 1rem;
+        border-radius: 15px;
+        border-bottom: solid;
+        
+
+        .info1 {
+            padding: 1rem 1rem 0.5rem 1rem;
+        } 
+
+        .info2 {
+            padding: 0rem 1rem 0rem 1rem;
+        }
+
+        .info3 {
+            padding: 0.5rem 1rem 1rem 1rem;
+        }
+    }
+
+    .details {
+        background-color: #E0E1F0;
+        margin-block: 1rem;
+        border-radius: 15px;
+        border-bottom: solid;
+
+        .info1 {
+            padding: 1rem 1rem 0.5rem 1rem;
+        } 
+
+        .info2 {
+            padding: 0rem 1rem 0.5rem 1rem;
+        }
+
+        .info3 {
+            padding: 0rem 1rem 1rem 1rem;
+        }
+    }
+}
+
+
 /* MARK: formulier */
 main.formulier {
     h1 {
