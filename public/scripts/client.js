@@ -1,15 +1,19 @@
 
 let deButton = document.querySelector("button")
-let deTextarea = document.querySelector("textarea")
+let deLatTextarea = document.querySelector("#lat")  // breedtegraad 
+let deLongTextarea = document.querySelector("#long")  // lengtegraad
 
 // button tonen als er JS is
 deButton.hidden = false
 // niet tikken als er JS is
-deTextarea.readOnly = true 
+deLatTextarea.readOnly = true
+deLongTextarea.readOnly = true
 // leeg maken omdat browsers anders de laatste waarde alvast invullen
-deTextarea.value = "";
+deLatTextarea.value = ""
+deLongTextarea.value = ""
 // andere instructie als er JS is
-deTextarea.placeholder = "druk op de button";
+deLatTextarea.placeholder = "druk op de button"
+deLongTextarea.placeholder = "druk op de button"
 
 // op button klikken om de coördinaten op te halen
 deButton.addEventListener("click", getLocation)
@@ -35,13 +39,15 @@ function getLocation() {
 // als argument wordt de location gebruikt die de getCurrentPosition method heeft opgehaald
 function showPosition(location) {
     const userCoordinates = {
+        long: location.coords.longitude,
         lat: location.coords.latitude,
-        lon: location.coords.longitude,
     }
 
-    // modernert - meer liquid-ish
+    // modernert - meer liquid-ish - dit was. nog voordat er twee textareas was
     // deTextarea.value = `lat: ${userCoordinates.lat}\nlon: ${userCoordinates.lon}`;
-
     // maar ik doe het lekker toch zo - vind ik makkelijker lezen
-        deTextarea.value = "lat: " + userCoordinates.lat + "\nlon: " + userCoordinates.lon;
+    // deTextarea.value = "lat: " + userCoordinates.lat + "\nlon: " + userCoordinates.lon;
+
+    deLongTextarea.value = userCoordinates.long
+    deLatTextarea.value = userCoordinates.lat
 }
