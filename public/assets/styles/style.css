@@ -359,15 +359,25 @@ main.formulier {
         display: flex;
         color: var(--light-accent);
         flex-direction: column;
-        background-color: var(--primary-color);
         margin: 0.5rem;
         padding: 1.5rem 0.8rem 1.5rem 0.8rem;
         gap: 0.5rem;
-        
+        border-radius: var(--border-radius);
+
+        .button-formulier {
+            width: 30%;
+            height: 100%;
+        }
+ 
          .label-ctc {
             display: flex;
             flex-direction: column;
+        }
 
+        & .label-ctc[for="time"] {
+            margin-top: 1.5rem;
+        }
+            
             .foto {
                 background-color: var(--primary-color);
             }
@@ -386,20 +396,58 @@ main.formulier {
 
         .input-design-file {
                 margin-bottom: 1.3rem;
-            }
+        }
 
         .verzend-knop {
             width: 35%;
             height: 35px;
-            background-color: transparent;
-            border-color: var(--secondary-color);
-            color: var(--secondary-color);
+            background-color: var(--secondary-color);
+            border-color: var(--dark-accent);
+            border: none;
+            color: var(--dark-accent);
             border-radius: var(--border-radius);
+            margin-top: 1rem;
 
             &:hover {
-                background-color: var(--secondary-color);
+                background-color: var();
                 color: var(--dark-accent);
             }
         }
     }
-}
+
+     fieldset {
+            background-color: var(--primary-color);
+            border-radius: 1.3rem;
+            border-color: none;  
+            margin-top: 1rem;
+    }
+
+    legend {
+        background-color: black;
+        color: white;
+        padding: 3px 6px;
+
+        .tijd {
+            margin-top: 1rem;
+        }
+    }
+
+    .fieldset-padding {
+        padding: 2rem;
+    }
+
+    .label-spacing {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+    .textarea {
+        field-sizing: content;
+        resize: none;
+        min-height: 6lh;
+    }
+
+    .placeholder {
+                font-style: italic;
+                color: red;
+            }
