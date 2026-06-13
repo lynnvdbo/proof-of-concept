@@ -62,14 +62,21 @@ app.get('/quickscan', async function (request, response) {
 })
 
 // GET route naar stad detailpagina
-app.get('/stad', async function (request, response) {
-    const apiResponse = await fetch(baseURL)
+
+
+app.get('/stad/:stadsnaam', async function (request, response) {
+    const params = new URLSearchParams()
+    // filter[city][_eq] -> geef alleen de steden waar city gelijk is aan de stadsnaam wordt meegegeven"
+    params.set('filter[city][_eq]', request.params.stadsnaam)
+
     const apiResponseJSON = await apiResponse.json()
     
     response.render('stad', {
-      cities: apiResponseJSON.data
+      cities: apiResponseJSON.data,
+      stadsnaam: request.params.stadsnaam
     });
 })
+
 
 // GET route naar quickscan-detailpagina
 app.get('/quickscan-detailpagina', async function (request, response) {
