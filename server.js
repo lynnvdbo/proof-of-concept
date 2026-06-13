@@ -38,11 +38,6 @@ const baseURL = 'https://fdnd-agency.directus.app/items/ctc_smartzone'
 
 // // GET route voor de index/home
 app.get('/', async function (request, response) {
-   // Render index.liquid uit de Views map
-   // Geef hier eventueel data aan mee
-    // const res = await fetch(baseURL);
-    // const result = await res.json();
-    const apiResponse = await fetch(baseURL)
     const apiResponse = await fetch(`${baseURL}?sort=city`)
     const apiResponseJSON = await apiResponse.json()
 
@@ -53,9 +48,12 @@ app.get('/', async function (request, response) {
     // is de huidige plek anders, dan hebben we deze stad al eerder gezien dus weggooien
     huidigePositie === alleSteden.findIndex(c => c.city === huidigeStad.city)
     )
+    
     response.render('index', {
+      cities: uniqueCities
     });
 })
+
 
 // GET route naar formulier/quickscan
 app.get('/quickscan', async function (request, response) {
