@@ -80,11 +80,14 @@ app.get('/stad/:stadsnaam', async function (request, response) {
 
 
 // GET route naar quickscan-detailpagina
-app.get('/quickscan-detailpagina', async function (request, response) {
-    const apiResponse = await fetch(baseURL)
+app.get('/quickscan-detailpagina/:id', async function (request, response) {
+    const apiResponse = await fetch(`${baseURL}/${request.params.id}`)
     const apiResponseJSON = await apiResponse.json()
     
     response.render('quickscan-detailpagina', {
-      cities: apiResponseJSON.data
+      city: apiResponseJSON.data
     });
+})
+
+
 })
