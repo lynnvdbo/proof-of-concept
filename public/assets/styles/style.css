@@ -416,11 +416,11 @@ main.formulier {
         }
     }
 
-     fieldset {
-            background-color: var(--primary-color);
-            border-radius: 1.3rem;
-            border-color: none;  
-            margin-top: 1rem;
+    fieldset {
+        background-color: var(--primary-color);
+        border-radius: 1.3rem;
+        border-color: none;  
+        margin-top: 1rem;
     }
 
     legend {
@@ -445,10 +445,15 @@ main.formulier {
     .textarea {
         field-sizing: content;
         resize: none;
-        min-height: 6lh;
+        max-width: 100%;
+    }
+
+    #long, #lat {
+        height: 50px;
+        resize: none;
     }
 
     .placeholder {
-                font-style: italic;
-                color: red;
-            }
+        font-style: italic;
+        color: red;
+    }
