@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'DM sans', sans-serif; 
 }
 
@@ -32,7 +33,7 @@
 :root {
     /* colors */
     --primary-color: #585A9D;
-    --secondary-color: #F6E34D;
+    --secondary-color: #efd61f;
     --dark-accent: #000000;
     --light-accent: #FFFFFF;
 
