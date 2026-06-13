@@ -14,11 +14,10 @@
         {% for city in cities  %}
                 
             <section class="locaties">
-                <a href="/quickscan-detailpagina">
                 {% if city.picture %}
                 <img src="https://fdnd-agency.directus.app/assets/{{ city.picture }}" alt="" width="180" height="140">
                 {% else %}
-                <img src="assets/images/voorbeeldfoto2.png" alt="{{ city.city }}" width="180" height="140">
+                <img src="/assets/images/voorbeeldfoto2.png" alt="{{ city.city }}" width="180" height="140">
                 {% endif %}
                 <div class="straatnaam">
                 <svg viewBox="0 0 227 94" fill="none" xmlns="http://www.w3.org/2000/svg">
