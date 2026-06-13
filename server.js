@@ -69,6 +69,7 @@ app.get('/stad/:stadsnaam', async function (request, response) {
     // filter[city][_eq] -> geef alleen de steden waar city gelijk is aan de stadsnaam wordt meegegeven"
     params.set('filter[city][_eq]', request.params.stadsnaam)
 
+    const apiResponse = await fetch(`${baseURL}?${params.toString()}`)
     const apiResponseJSON = await apiResponse.json()
     
     response.render('stad', {
