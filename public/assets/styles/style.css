@@ -356,6 +356,20 @@ main.formulier {
         z-index: -100; 
     }
 
+    .button-coordinaten {
+        background-color: transparent;
+        color: var(--light-accent);
+        border-color: var(--light-accent);
+        border-radius: var(--border-radius);
+        padding: 0.4rem;
+        font-weight: var(--font-weight-light);
+
+        &:hover {
+            background-color: #E0E1F0;
+            color: var(--dark-accent);
+        }
+    }
+
     .formulier-quickscan {
         display: flex;
         color: var(--light-accent);
@@ -368,6 +382,7 @@ main.formulier {
         .button-formulier {
             width: 30%;
             height: 100%;
+            background-color: rgb(222, 149, 54);
         }
  
          .label-ctc {

@@ -8,6 +8,12 @@
 
 @font-face {
     font-family: DM sans;
+    src: url('../fonts/DMSans_18pt-Thin.ttf');
+    font-weight: 100 ; /* thin */
+}
+
+@font-face {
+    font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Regular.ttf');
     font-weight: 400 ; /* regular */
 }
@@ -44,6 +50,7 @@
     --shadow: inset 0 1px 2px oklch(100% 0 0 / 12.82%), 0 2px 4px oklch(0 0 0 / 10.82%), 0 4px 8px oklch(0 0 0 / 8.24%);
     
     /* font weights */
+    --font-weight-light: 100;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
