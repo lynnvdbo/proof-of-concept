@@ -17,20 +17,22 @@
     {{ city.address }}
   </h1>
 </section>
+
 <section class="locatie-tijd">
   <h2>Locatie & tijd</h2>
   <p class="info1"><span>Stad:</span> {{ city.city }}</p>
   <p class="info2"><span>Tijd:</span> {{ city.time }}</p>
   <p class="info3"><span>Lengtegraad:</span> {{ city.long }}</p>
   <p class="info4"><span>Breedtegraad:</span> {{ city.lat }}</p>
-  
 </section>
+
 <section class="geschiktheid">
   <h2>Geschiktheid</h2>
   <p class="info1"><span>Status:</span> {{ city.status }}</p>
   <p class="info2"><span>Geschiktheid monitoring:</span> {{ city.monitoring_suitability }}</p>
   <p class="info3"><span>Geschiktheid smart zone:</span> {{ city.smartzone_suitability }}</p>
 </section>
+
 <section class="details">
   <h2>Details</h2>
   <p class="info1"><span>Verkeersbord:</span> {{ city.traffic_sign }}</p>
