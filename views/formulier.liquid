@@ -13,7 +13,14 @@
             <legend>Locatie & tijd</legend>
 
             <label for="city" class="label-ctc">Stad:</label>
-            <input name="city" type="text" id="city" class="input-design">
+            <input name="city" list="cities" type="text" id="city" class="input-design">
+
+            <datalist id="cities">
+                <option value="Amsterdam"></option>
+                <option value="Breda"></option>
+                <option value="Haarlem"></option>
+                <option value="'s-Hertogenbosch"></option>
+            </datalist>
 
             <label for="adres" class="label-ctc">Adres:</label>
             <input name="address" type="text" id="adres" class="input-design">
