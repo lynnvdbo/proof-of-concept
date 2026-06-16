@@ -467,6 +467,10 @@ main.formulier {
 
     .placeholder {
         font-style: italic;
-        color: red;
+        color:rgb(117, 116, 116);
+    }
+
+    input[readonly] {
+        background-image: linear-gradient(#d8d7d7 0 0);
     }
 }
