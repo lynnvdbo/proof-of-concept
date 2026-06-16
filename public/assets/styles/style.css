@@ -3,7 +3,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    /* container-type: scroll-state; */
 }
 
 
@@ -25,7 +24,7 @@ header {
         justify-content: center;
         align-items: center;
         padding-inline: 0.7rem;
-        color: var(--dark-accent);
+        color: var(--buttonquickscan-color);
         font-weight:var(--font-weight-bold);
         box-shadow: var(--shadow);
       
@@ -80,7 +79,9 @@ header {
 /* MARK: partial terug-pijltje */
 .pijltje-terug {
     margin: 1rem;
+    color: var(--text-color);
 }
+
 
 /* MARK: partial sub-logo */
 .sub-logo {
@@ -277,7 +278,7 @@ main.stad {
     }
 
     .locatie-tijd {
-        background-color: #E0E1F0;
+        background-color:var(--background-fields);
         margin-block: 1rem;
         border-radius: 15px;
         border-bottom: solid;
@@ -300,7 +301,7 @@ main.stad {
     } 
 
     .geschiktheid {
-        background-color: #E0E1F0;
+        background-color:var(--background-fields);
         margin-block: 1rem;
         border-radius: 15px;
         border-bottom: solid;
@@ -320,7 +321,7 @@ main.stad {
     }
 
     .details {
-        background-color: #E0E1F0;
+        background-color:var(--background-fields);
         margin-block: 1rem;
         border-radius: 15px;
         border-bottom: solid;
@@ -358,7 +359,8 @@ main.formulier {
 
     .button-coordinaten {
         background-color: transparent;
-        color: var(--light-accent);
+        color: var(--button-coord-color);
+        
         border-color: var(--light-accent);
         border-radius: var(--border-radius);
         padding: 0.4rem;
@@ -366,7 +368,7 @@ main.formulier {
 
         &:hover {
             background-color: #E0E1F0;
-            color: var(--dark-accent);
+            color: var(--button-coord-hover-color);
         }
     }
 
@@ -444,8 +446,8 @@ main.formulier {
     }
 
     legend {
-        background-color: black;
-        color: white;
+        background-color: var(--dark-accent);
+        color: var(--legend-color);
         padding: 10px 20px;
         border-radius: var(--border-radius);
 
