@@ -465,7 +465,7 @@ main.formulier {
         margin-top: 1.5rem;
     }
 
-    .placeholder {
+    ::placeholder {
         font-style: italic;
         color:rgb(117, 116, 116);
     }
