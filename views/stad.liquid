@@ -13,7 +13,7 @@
     <div>
         {% for city in cities  %}
                 
-            <section class="locaties">
+            <article class="locaties">
                 <a href="/quickscan-detailpagina/{{ city.id }}">
                 {% if city.picture %}
                 <img src="https://fdnd-agency.directus.app/assets/{{ city.picture }}" alt="" width="180" height="140">
@@ -27,7 +27,7 @@
                 <p>{{ city.address }}</p>
                 </div>
                 </a>
-            </section>
+            </article>
 
         {% endfor %} 
     </div>
