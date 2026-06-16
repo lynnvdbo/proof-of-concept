@@ -386,6 +386,7 @@ main.formulier {
             flex-direction: column;
             font-size: 1.1rem;
             margin-bottom: 0.4rem;
+            gap: 0.3rem;
         }
 
         & .label-ctc[for="time"] {

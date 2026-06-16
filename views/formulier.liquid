@@ -11,9 +11,7 @@
 
         <fieldset class="locatie-tijd fieldset-padding">
             <legend>Locatie & tijd</legend>
-
-            <label for="city" class="label-ctc label-spacing">Stad:</label>
-            <input name="city" list="cities" type="text" id="city" class="input-design">
+            <label for="city" class="label-ctc label-spacing">Stad:<input name="city" list="cities" type="text" id="city" class="input-design"></label>
 
             <datalist id="cities">
                 <option value="Amsterdam"></option>
@@ -22,90 +20,64 @@
                 <option value="'s-Hertogenbosch"></option>
             </datalist>
 
-            <label for="adres" class="label-ctc">Adres:</label>
-            <input name="address" type="text" id="adres" class="input-design">
-
-            <label for="long" class="label-ctc">Lengtegraad:</label>
-            <input name="long" type="text"  id="long" maxlength="100" placeholder="zoek bijv. in Google maps de coördinaten op"  class="input-design"></input>
-
-            <label for="lat" class="label-ctc">Breedtegraad:</label>
-            <input name="lat" type="text"  id="lat" maxlength="100" placeholder="zoek bijv. in Google maps de coördinaten op"  class="input-design"></input>
+            <label for="adres" class="label-ctc">Adres:<input name="address" type="text" id="adres" class="input-design"></label>
+            <label for="long" class="label-ctc">Lengtegraad:<input name="long" type="text"  id="long" maxlength="100" placeholder="zoek bijv. in Google maps de coördinaten op"  class="input-design"></input></label>
+            <label for="lat" class="label-ctc">Breedtegraad:<input name="lat" type="text"  id="lat" maxlength="100" placeholder="zoek bijv. in Google maps de coördinaten op"  class="input-design"></input></label>
             <button type="button" hidden class="button-coordinaten">Krijg de coördinaten</button>
-
-            <label for="time" class="label-ctc">Tijd:</label>
-            <input name="time" type="time" id="time" class="input-design">
+            <label for="time" class="label-ctc">Tijd:<input name="time" type="time" id="time" class="input-design"></label>
         </fieldset>
 
         <fieldset class="geschiktheid fieldset-padding">
             <legend>Geschiktheid</legend>
-
             <label for="status" class="label-ctc label-spacing">Status:</label>
-            <div class="status">
-                <div>
-                    <input type="radio" id="vrij" name="status" value="vrij">
-                    <label for="vrij">Vrij</label>
+                <div class="status">
+                    <div>
+                        <label for="vrij"><input type="radio" id="vrij" name="status" value="vrij">Vrij</label>
+                    </div>  
+                    <div> 
+                        <label for="bezet"><input type="radio" id="bezet" name="status" value="bezet">Bezet</label>
+                    </div>
+                    <div>
+                        <label for="overtreding"><input type="radio" id="overtreding" name="status" value="overtreding">Overtreding</label>
+                    </div>
+                    <div>
+                        <label for="bestaat-niet"><input type="radio" id="bestaat-niet" name="status" value="bestaat niet">Bestaat niet</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="bezet" name="status" value="bezet">
-                    <label for="bezet">Bezet</label>
-                </div>
-                <div>
-                    <input type="radio" id="overtreding" name="status" value="overtreding">
-                    <label for="overtreding">Overtreding</label>
-                </div>
-                <div>
-                    <input type="radio" id="bestaat-niet" name="bestaat-niet" value="bestaat niet">
-                    <label for="bestaat-niet">Bestaat niet</label>
-                </div>
-            </div>
 
             <label for="geschiktheid-monitoring" class="label-ctc label-spacing">Geschiktheid monitoring:</label>
-            <div class="monitoring">
-                <div>
-                    <input type="radio" id="neutraal" name="monitoring_suitability" value="neutraal">
-                    <label for="neutraal">Neutraal</label>
+                <div class="monitoring">
+                    <div> 
+                        <label for="neutraal"><input type="radio" id="neutraal" name="monitoring_suitability" value="neutraal">Neutraal</label>
+                    </div>
+                    <div>
+                        <label for="geschikt"><input type="radio" id="geschikt" name="monitoring_suitability" value="geschikt">Geschikt</label>
+                    </div>
+                    <div>
+                        <label for="ongeschikt"><input type="radio" id="ongeschikt" name="monitoring_suitability" value="ongeschikt">Ongeschikt</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="geschikt" name="monitoring_suitability" value="geschikt">
-                    <label for="geschikt">Geschikt</label>
-                </div>
-                <div>
-                    <input type="radio" id="ongeschikt" name="monitoring_suitability" value="ongeschikt">
-                    <label for="ongeschikt">Ongeschikt</label>
-                </div>
-            </div>
 
             <label for="geschiktheid-smartzone" class="label-ctc label-spacing">Geschiktheid smart zone:</label>
-            <div class="smartzone">
-                <div>
-                    <input type="radio" id="neutraal2" name="smartzone_suitability" value="neutraal">
-                    <label for="neutraal2">Neutraal</label>
+                <div class="smartzone">
+                    <div>
+                        <label for="neutraal2"><input type="radio" id="neutraal2" name="smartzone_suitability" value="neutraal">Neutraal</label>
+                    </div>
+                    <div>
+                        <label for="geschikt2"><input type="radio" id="geschikt2" name="smartzone_suitability" value="geschikt">Geschikt</label>
+                    </div>
+                    <div>
+                        <label for="ongeschikt2"><input type="radio" id="ongeschikt2" name="smartzone_suitability" value="ongeschikt">Ongeschikt</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="geschhikt2" name="smartzone_suitability" value="geschikt">
-                    <label for="geschikt2">Geschikt</label>
-                </div>
-                <div>
-                    <input type="radio" id="ongeschikt2" name="smartzone_suitability" value="ongeschikt">
-                    <label for="ongeschikt2">Ongeschikt</label>
-                </div>
-            </div>
         </fieldset>
 
         <fieldset class="details fieldset-padding">
             <legend>Details</legend>
-
-            <label for="verkeersbord" class="label-ctc label-spacing">Verkeersbord:</label>
-            <input name="traffic_sign" type="text" id="verkeersbord" class="input-design">
-
-            <label for="observaties" class="label-ctc">Observaties:</label>
-            <textarea name="comment" id="observaties" maxlength="100" class="input-design"></textarea>
-
-            <label for="lengte" class="label-ctc">Lengte(cm):</label>
-            <input name="length" type="text" id="lengte" class="input-design">
-
-            <label for="foto" class="label-ctc">Foto:</label>
-            <input type="file" id="foto" class="input-design-file">
+            <label for="verkeersbord" class="label-ctc label-spacing">Verkeersbord: <input name="traffic_sign" type="text" id="verkeersbord" class="input-design"></label>
+            <label for="observaties" class="label-ctc">Observaties: <textarea name="comment" id="observaties" maxlength="100" class="input-design"></textarea></label>
+            <label for="lengte" class="label-ctc">Lengte(cm): <input name="length" type="text" id="lengte" class="input-design"></label>
+            <label for="foto" class="label-ctc">Foto: <input type="file" id="foto" class="input-design-file"></label> 
         </fieldset>
 
         <input type="submit" value="Toevoegen" class="verzend-knop">
