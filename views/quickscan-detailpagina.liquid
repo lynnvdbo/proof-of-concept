@@ -20,24 +20,40 @@
 
 <section class="locatie-tijd">
   <h2>Locatie & tijd</h2>
-  <p class="info1"><span>Stad:</span> {{ city.city }}</p>
-  <p class="info2"><span>Tijd:</span> {{ city.time }}</p>
-  <p class="info3"><span>Lengtegraad:</span> {{ city.long }}</p>
-  <p class="info4"><span>Breedtegraad:</span> {{ city.lat }}</p>
+  <dl class="info1">
+    <dt>Stad:</dt>
+    <dd>{{ city.city }}</dd>
+    <dt>Tijd:</dt>
+    <dd>{{ city.time }}</dd>
+    <dt>Lengtegraad:</dt>
+    <dd>{{ city.long }}</dd>
+    <dt>Breedtegraad:</dt>
+    <dd>{{ city.lat }}</dd>
+  </dl>
 </section>
 
 <section class="geschiktheid">
   <h2>Geschiktheid</h2>
-  <p class="info1"><span>Status:</span> {{ city.status }}</p>
-  <p class="info2"><span>Geschiktheid monitoring:</span> {{ city.monitoring_suitability }}</p>
-  <p class="info3"><span>Geschiktheid smart zone:</span> {{ city.smartzone_suitability }}</p>
+  <dl class="info1">
+    <dt>Status:</dt>
+    <dd>{{ city.status }}</dd>
+    <dt>Geschiktheid monitoring:</dt>
+    <dd>{{ city.monitoring_suitability }}</dd>
+    <dt>Geschiktheid smart zone:</dt>
+    <dd>{{ city.smartzone_suitability }}</dd>
+  </dl>
 </section>
 
 <section class="details">
   <h2>Details</h2>
-  <p class="info1"><span>Verkeersbord:</span> {{ city.traffic_sign }}</p>
-  <p class="info2"><span>Observaties:</span> {{ city.comment }}</p>
-  <p class="info3"><span>Lengte (cm):</span> {{ city.length }}</p>
+  <dl class="info1">
+    <dt>Verkeersbord:</dt>
+    <dd>{{ city.traffic_sign }}</dd>
+    <dt>Observaties:</dt>
+    <dd>{{ city.comment }}</dd>
+    <dt>Lengte (cm):</dt>
+    <dd>{{ city.length }}</dd>
+  </dl>
 </section>
 
 </main>

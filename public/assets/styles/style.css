@@ -273,72 +273,39 @@ main.stad {
         border-radius: 15px 15px 0 0;
     }
 
-    span {
-        font-weight: var(--font-weight-bold);
-    }
-
-    .locatie-tijd {
-        background-color:var(--background-fields);
-        margin-block: 1rem;
-        border-radius: 15px;
-        border-bottom: solid;
-
-        .info1 {
+    .info1 {
             padding: 1rem 1rem 0.5rem 1rem;
         } 
 
-        .info2 {
-            padding: 0rem 1rem 0rem 1rem;
-        }
-
-        .info3 {
-            padding: 0.5rem 1rem 0.5rem 1rem;
-        }
-
-        .info4 {
-            padding: 0rem 1rem 1rem 1rem;
-        }
-    } 
-
-    .geschiktheid {
-        background-color:var(--background-fields);
-        margin-block: 1rem;
-        border-radius: 15px;
-        border-bottom: solid;
-        
-
-        .info1 {
-            padding: 1rem 1rem 0.5rem 1rem;
-        } 
-
-        .info2 {
-            padding: 0rem 1rem 0rem 1rem;
-        }
-
-        .info3 {
-            padding: 0.5rem 1rem 1rem 1rem;
-        }
-    }
-
+    .locatie-tijd, 
+    .geschiktheid, 
     .details {
         background-color:var(--background-fields);
         margin-block: 1rem;
         border-radius: 15px;
         border-bottom: solid;
+    } 
 
-        .info1 {
-            padding: 1rem 1rem 0.5rem 1rem;
-        } 
+    dl {
+        margin: 0;
+    }
 
-        .info2 {
-            padding: 0rem 1rem 0.5rem 1rem;
-        }
+    dt {
+        display: inline;
+        font-weight: bold;
+    }
 
-        .info3 {
-            padding: 0rem 1rem 1rem 1rem;
+    dd {
+        display: inline;
+        margin: 0;
+
+            &::after {
+                content: '';
+                display: block;
+                margin-bottom: 8px
+            }
         }
     }
-}
 
 
 /* MARK: formulier */
