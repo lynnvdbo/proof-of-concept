@@ -3,6 +3,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+
+    @media (min-width: 500px) {
+        margin: 0 auto;
+        max-width: 500px;
+    }
 }
 
 
@@ -39,6 +44,11 @@ header {
         width: 150px;
         height: 100%;
     }
+
+    @media (min-width: 500px) {
+        margin: 0 auto;
+        max-width: 500px;
+    }
 }
 
 
@@ -73,6 +83,11 @@ header {
     .underline {
         text-decoration: underline;
     }
+
+    @media (min-width: 500px) {
+        margin: 0 auto;
+        max-width: 500px;
+    }
 }
 
 
@@ -80,6 +95,13 @@ header {
 .pijltje-terug {
     margin: 1rem;
     color: var(--text-color);
+
+    @media (min-width: 500px) {
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            gap:  1rem
+        }
 }
 
 
@@ -172,6 +194,19 @@ main.home {
         gap: 0.8rem;
         padding:  1rem 1rem 1rem 1rem;
     }
+
+    @media (min-width: 500px) {
+        max-width: 500px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        overflow: hidden;
+        border-color: var(--dark-accent);
+
+        .sub-logo {
+            display: none;
+        }
+    }
 }
 
 
@@ -190,6 +225,7 @@ main.stad {
         display: flex;
         align-items: center;
         margin: 1rem;
+        gap: 1rem
     }
 
     p {
@@ -201,6 +237,7 @@ main.stad {
         width: 100%;
         height: 250px;
         filter: brightness(80%);
+        border-radius: 0rem;
     }
 
     .alle-paginas {
@@ -236,6 +273,15 @@ main.stad {
             }
         }
     }
+
+    @media (min-width: 500px) {
+        max-width: 500px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        overflow: hidden;
+        border-color: var(--dark-accent);
+    }
 }
 
 
@@ -243,7 +289,7 @@ main.stad {
 .quickscan-detailpagina {
     margin: 0rem 1rem 1rem 1rem;
 
-    .pijltje-terugg {
+    .pijltje-terug {
         padding: 0rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem
@@ -305,11 +351,24 @@ main.stad {
                 margin-bottom: 8px
             }
         }
+
+        @media (min-width: 500px) {
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
     }
 
 
 /* MARK: formulier */
 main.formulier {
+
+    a:first-child {
+        display: block;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
     h1 {
         text-align: center;
     }
@@ -353,7 +412,6 @@ main.formulier {
             flex-direction: column;
             font-size: 1.1rem;
             margin-bottom: 0.4rem;
-            gap: 0.3rem;
         }
 
         & .label-ctc[for="time"] {
@@ -403,7 +461,6 @@ main.formulier {
                 color: var(--primary-color);
             }
         }
-    }
 
     fieldset {
         background-color: var(--primary-color);
@@ -437,6 +494,14 @@ main.formulier {
         font-style: italic;
         color:rgb(117, 116, 116);
     }
+    
+    @media (min-width: 500px) {
+        margin: 0 auto;
+        max-width: 500px;
+
+        .sub-logo {
+            display: none;
+        }
 
     input[readonly] {
         background-image: linear-gradient(#d8d7d7 0 0);
