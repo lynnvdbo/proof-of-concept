@@ -503,7 +503,10 @@ main.formulier {
             display: none;
         }
 
-    input[readonly] {
-        background-image: linear-gradient(#d8d7d7 0 0);
+        a:first-child {
+        display: block;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
     }
 }
