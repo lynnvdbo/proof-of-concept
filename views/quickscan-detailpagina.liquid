@@ -6,7 +6,7 @@
   {% if city.picture %}
     <img src="https://fdnd-agency.directus.app/assets/{{ city.picture }}" alt="" width="180" height="140">
   {% else %}
-    <img src="/assets/images/voorbeeldfoto2.png" alt="" width="180" height="140">
+    <img src="/assets/images/fallbackfoto.webp" alt="" width="180" height="140">
   {% endif %}
   <h1>
     <a href="/stad/{{ city.city }}">
@@ -57,3 +57,4 @@
 </section>
 
 </main>
+
