@@ -1,4 +1,4 @@
-
+// COORDINATEN BUTTON
 let deButton = document.querySelector("button")
 let deLatTextarea = document.querySelector("#lat")  // breedtegraad 
 let deLongTextarea = document.querySelector("#long")  // lengtegraad
