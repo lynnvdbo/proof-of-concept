@@ -462,37 +462,42 @@ main.formulier {
             }
         }
 
-    fieldset {
-        background-color: var(--primary-color);
-        border-radius: 1.3rem;
-        border-color: none;  
-        margin-top: 1rem;
-        border: none;
-    }
-
-    legend {
-        background-color: var(--dark-accent);
-        color: var(--legend-color);
-        padding: 10px 20px;
-        border-radius: var(--border-radius);
-
-        .tijd {
+        fieldset {
+            background-color: var(--primary-color);
+            border-radius: 1.3rem;
+            border-color: none;  
             margin-top: 1rem;
+            border: none;
         }
-    }
 
-    .fieldset-padding {
-        padding: 0.5rem 2rem 2rem 2rem;
-    }
+        legend {
+            background-color: var(--dark-accent);
+            color: var(--legend-color);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
 
-    .label-spacing {
-        display: block;
-        margin-top: 1.5rem;
-    }
+            .tijd {
+                margin-top: 1rem;
+            }
+        }
 
-    ::placeholder {
-        font-style: italic;
-        color:rgb(117, 116, 116);
+        .fieldset-padding {
+            padding: 0.5rem 2rem 2rem 2rem;
+        }
+
+        .label-spacing {
+            display: block;
+            margin-top: 1.5rem;
+        }
+
+        ::placeholder {
+            font-style: italic;
+            color:rgb(117, 116, 116);
+        }
+
+        input[readonly] {
+            background-image: linear-gradient(#d8d7d7 0 0);
+        }
     }
     
     @media (min-width: 500px) {

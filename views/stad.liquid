@@ -15,21 +15,23 @@
                 
             <article class="locaties">
                 <a href="/quickscan-detailpagina/{{ city.id }}">
-                <picture> 
-                    {% if city.picture %}
-                        <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ city.picture }}?format=avif">             
-                        <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{ city.picture }}?format=webp">
-                        <img loading="eager" width="180" height="140" src="https://fdnd-agency.directus.app/assets/{{ city.picture }}" alt="">
-                        {% else %}
-                        <img loading="eager" src="/assets/images/fallbackfoto.webp" width="180" height="140" alt="">
-                        {% endif %}
-                </picture>
-                <div class="straatnaam">
-                <svg viewBox="0 0 227 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 23.9043V0.904268C17.5 -4.09559 48.5 12.9042 55.5 20.9042C59.6256 25.6192 84.5 70.9041 114 70.9041C143.5 70.9041 149.5 47.4043 170.5 23.9043C187.3 5.10427 214.833 0.737601 226.5 0.904268V23.9043C213.667 23.9043 184.5 30.6043 170.5 57.4043C156.5 84.2043 127 92.9043 114 93.9043C101.333 94.4043 71.7 87.8043 54.5 57.4043C37.3 27.0043 11 22.4043 0 23.9043Z" fill="#585A9D"/>
-                </svg>
-                <p>{{ city.address }}</p>
-                </div>
+
+                    <picture> 
+                        {% if city.picture %}
+                            <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{ city.picture }}?format=avif">             
+                            <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{ city.picture }}?format=webp">
+                            <img loading="eager" width="180" height="140" src="https://fdnd-agency.directus.app/assets/{{ city.picture }}" alt="">
+                            {% else %}
+                            <img loading="eager" src="/assets/images/fallbackfoto.webp" width="180" height="140" alt="">
+                            {% endif %}
+                    </picture>
+
+                    <div class="straatnaam">
+                        <svg viewBox="0 0 227 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23.9043V0.904268C17.5 -4.09559 48.5 12.9042 55.5 20.9042C59.6256 25.6192 84.5 70.9041 114 70.9041C143.5 70.9041 149.5 47.4043 170.5 23.9043C187.3 5.10427 214.833 0.737601 226.5 0.904268V23.9043C213.667 23.9043 184.5 30.6043 170.5 57.4043C156.5 84.2043 127 92.9043 114 93.9043C101.333 94.4043 71.7 87.8043 54.5 57.4043C37.3 27.0043 11 22.4043 0 23.9043Z" fill="#585A9D"/>
+                        </svg>
+                        <p>{{ city.address }}</p>
+                    </div>
                 </a>  
             </article>
 
