@@ -137,7 +137,7 @@ header {
         display: inline-flex;
         text-decoration: none;
         min-height: 44px;
-        min-width: 22px;
+        min-width: 24px;
         color:var(--black-color);
     }
 
