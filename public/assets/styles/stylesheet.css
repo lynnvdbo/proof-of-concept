@@ -15,35 +15,40 @@ body {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Thin.ttf');
     font-weight: 100 ; /* thin */
+    font-display: swap;
 }
 
 @font-face {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Regular.ttf');
     font-weight: 400 ; /* regular */
+    font-display: swap;
 }
 
 @font-face {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Medium.ttf');
     font-weight: 500 ; /* medium */
+    font-display: swap;
 }
 
 @font-face {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Bold.ttf');
     font-weight: 700 ; /* bold */
+    font-display: swap;
 }
 
 @font-face {
     font-family: DM sans;
     src: url('../fonts/DMSans_18pt-Black.ttf');
     font-weight: 800 ; /* black */
+    font-display: swap;
 }
 
 :root {
     /* colors */
-    --primary-color: #585A9D;
+    --primary-color: #472D7C;
     --secondary-color: #efd61f;
     --dark-accent: #000000;
     --light-accent: #FFFFFF;
@@ -81,7 +86,7 @@ body {
         --bg-color: #121212;
         --text-color: #ffffff;
         --dark-accent: #ffffff; 
-        --background-fields:  #3d3f6e;
+        --background-fields:  #7678a7;
         --buttonquickscan-color: #000000;
         --legend-color: #000000;
     }
