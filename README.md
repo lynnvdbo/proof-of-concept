@@ -12,6 +12,7 @@ Check [hier](https://proof-of-concept-zqs1.onrender.com/) de website.
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
+  * [Toegankelijkheid](#kenmerken)
   * [Installatie](#installatie)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
