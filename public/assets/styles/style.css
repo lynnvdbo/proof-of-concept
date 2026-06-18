@@ -127,14 +127,17 @@ header {
     .nummers {
         display: flex;
         flex-direction: row;
-        gap: 1em;
+        /* gap: 1em; */
         justify-content: center;
         color:var(--black-color);
         list-style-type: none;
     }
 
     .nummers a {
+        display: inline-flex;
         text-decoration: none;
+        min-height: 44px;
+        min-width: 22px;
         color:var(--black-color);
     }
 
