@@ -105,6 +105,35 @@ header {
 }
 
 
+/* MARK: partial pijltje terug top*/
+html {
+    container-type: scroll-state;
+
+    @media (prefers-reduced-motion:no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
+a[href="#top"] {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    translate: 0 calc(100% + 1em);
+    transition: .5s ease-in-out;
+    background-color: var(--background-fields);
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    color: var(--dark-accent);
+    text-decoration: none;
+}
+
+@container scroll-state(scrollable: top) {
+    a[href="#top"] {
+        translate: 0 0;
+    }
+}
+
+
 /* MARK: partial sub-logo */
 .sub-logo {
     height: 40rem;
