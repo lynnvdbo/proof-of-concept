@@ -53,7 +53,7 @@ Wanneer javascript het niet doet verdwijnt de knop en komt in het tekstvak te st
 
 ## Dark modus
 
-Ik heb ook een dark modus toegevoegd. Dus wanneer iemand heeft aangegeven dat hij liever dark modus wilt krijgt hij de darkmodus versie te zien. Dit heb ik gedaan met 
+Op de website heb ik een dark modus toegevoegd, dus wanneer iemand heeft aangegeven dat hij liever dark modus wilt krijgt hij de darkmodus versie te zien. Dit heb ik gedaan met 
 [@media/prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme) gedaan.
 
 <img width="180" height="360" alt="Scherm_afbeelding 2026-06-18 om 21 21 11 1" src="https://github.com/user-attachments/assets/c4cc9cb8-4af2-4181-9379-426b5eb0371f" />
@@ -62,6 +62,30 @@ Ik heb ook een dark modus toegevoegd. Dus wanneer iemand heeft aangegeven dat hi
 <img width="180" height="360" alt="Scherm_afbeelding 2026-06-18 om 21 22 17 1" src="https://github.com/user-attachments/assets/1878bd63-3c5a-4fdf-af84-0d3ebf0cdaf9" />
 
 https://github.com/lynnvdbo/proof-of-concept/blob/3bee14b310b6b789458bf68eb6fa9ec8af92d7be/public/assets/styles/stylesheet.css#L83-L92
+
+## [Scroll-state](https://github.com/lynnvdbo/proof-of-concept/issues/23) 
+
+Ik heb een scroll-state gebruikt voor een knop die tevoorschijn komt als je naar beneden scrollt, zodat je snel in een keer weer omhoog kan gaan. Omdat hij limited availability is en niet op elke browser werkt heb ik een [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports) toegevoegd. Wanneer een browser het niet support dan staat het pijljte standaard in beeld inplaats van dat hij tevoorschijn komt.
+
+https://github.com/lynnvdbo/proof-of-concept/blob/09a2aca4e64b10e5bfe5444fd89cece7f70fb105/public/assets/styles/style.css#L128-L138
+
+https://github.com/user-attachments/assets/e90ea907-e78e-4c8b-9c55-a0e0c9f53820
+
+<img width="320" height="700" alt="Scherm­afbeelding 2026-06-21 om 21 08 24" src="https://github.com/user-attachments/assets/13b29144-edc7-4539-ad59-79c1feca6749" />
+
+Wanneer de gebruiker 'vermindering beweging' aan heeft staat komt er geen animatie wanneer je naar boven gaat als je op het pijljte hebt gedrukt.
+
+https://github.com/lynnvdbo/proof-of-concept/blob/09a2aca4e64b10e5bfe5444fd89cece7f70fb105/public/assets/styles/style.css#L108-L114
+
+https://github.com/user-attachments/assets/8323513f-767d-4868-adfe-cbc7acfae0c8
+
+## [Scroll-Driven Animation](https://github.com/lynnvdbo/proof-of-concept/issues/24)
+
+Daarnaast heb ik ook een scroll-driven animation toegevoegd. Wanneer je naar beneden scrollt komen de locaties met een lichte opacity tevoorschijn. Net zoals scroll-state is dit ook limited availability en heb ik ook een [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports) toegevoegd en [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion) toegevoegd.
+
+https://github.com/lynnvdbo/proof-of-concept/blob/09a2aca4e64b10e5bfe5444fd89cece7f70fb105/public/assets/styles/style.css#L287-L296
+
+https://github.com/user-attachments/assets/a75b0996-163b-4661-94e2-f34fb435a214
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
