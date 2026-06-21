@@ -284,14 +284,16 @@ main.stad {
         margin: 1rem;
         font-size: 1rem;
         
-        @media (prefers-reduced-motion:no-preference) {
-            animation: reveal linear both;
-            animation-timeline: view();
-            animation-range-start: entry 0%;
-            animation-range-end: entry 75%;
-            /* shortcut -> animation-range: entry 0% entry 75%; */
-            /* entry 100% voor een trage fade, entry 50% voor een snelle */
-        }
+        @supports (animation-timeline: view()) {
+            @media (prefers-reduced-motion:no-preference) {
+                animation: reveal linear both;
+                animation-timeline: view();
+                animation-range-start: entry 0%;
+                animation-range-end: entry 75%;
+                /* shortcut -> animation-range: entry 0% entry 75%; */
+                /* entry 100% voor een trage fade, entry 50% voor een snelle */
+            }
+        } 
 
         svg {
             width: 25px;
