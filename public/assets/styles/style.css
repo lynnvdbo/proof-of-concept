@@ -117,7 +117,6 @@ a[href="#top"] {
     position: fixed;
     right: 1em;
     bottom: 1em;
-    translate: 0 calc(100% + 1em);
     transition: .5s ease-in-out;
     background-color: var(--background-fields);
     padding: 0.7rem;
@@ -126,9 +125,15 @@ a[href="#top"] {
     text-decoration: none;
 }
 
-@container scroll-state(scrollable: top) {
+@supports (container-type: scroll-state) {
     a[href="#top"] {
-        translate: 0 0;
+        translate: 0 calc(100% + 1em);  
+    }
+
+    @container scroll-state(scrollable: top) {
+        a[href="#top"] {
+            translate: 0 0;
+        }
     }
 }
 
