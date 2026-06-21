@@ -10,7 +10,6 @@ header {
     }
 }
 
-
 .header-ctc {
     display: flex;
     justify-content: space-between;
@@ -279,6 +278,15 @@ main.stad {
     .locaties {
         margin: 1rem;
         font-size: 1rem;
+        
+        @media (prefers-reduced-motion:no-preference) {
+            animation: reveal linear both;
+            animation-timeline: view();
+            animation-range-start: entry 0%;
+            animation-range-end: entry 75%;
+            /* shortcut -> animation-range: entry 0% entry 75%; */
+            /* entry 100% voor een trage fade, entry 50% voor een snelle */
+        }
 
         svg {
             width: 25px;
@@ -313,6 +321,18 @@ main.stad {
         border-right: 1px solid black;
         overflow: hidden;
         border-color: var(--dark-accent);
+    }
+}
+
+@keyframes reveal {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
